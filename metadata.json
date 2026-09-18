@@ -1,0 +1,6 @@
+{
+  "name": "SAMELÁ - Belleza Facial, Accesorios y Regalos",
+  "description": "Tienda virtual de belleza femenina especializada en cuidado facial, accesorios delicados y kits de regalo con visor 3D interactivo, gestión de pedidos, órdenes de compra y facturación.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

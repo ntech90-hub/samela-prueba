@@ -1,0 +1,52 @@
+/* Global styles and theme definitions */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-title {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-sans-body {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF0F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #F472B6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #DB2777;
+}
+
+/* Print stylesheet for Facturas & Órdenes de Compra */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #invoice-printable-area, #invoice-printable-area * {
+    visibility: visible;
+  }
+  #invoice-printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white !important;
+    color: #1f2937 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+

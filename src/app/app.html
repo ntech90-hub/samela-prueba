@@ -1,0 +1,356 @@
+<div class="min-h-screen flex flex-col bg-[#FFF9FC] text-stone-800 font-sans selection:bg-[#FCE7F3] selection:text-[#831843]">
+  
+  <!-- Navigation Header -->
+  <app-navbar (openOrdersHistory)="openOrdersHistory()" />
+
+  <!-- Hero Section -->
+  <app-hero />
+
+  <!-- Main Content Area -->
+  <main class="flex-1 space-y-16 sm:space-y-24">
+    
+    <!-- SECTION 1: ¿Qué es SAMELÁ? / Propuesta de Valor (From document Page 2 & 6) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FAF5FF] text-[#701A75] text-xs font-bold uppercase tracking-wider border border-[#E9D5FF] mb-2">
+          <span>✨</span>
+          <span>Emprendimiento Colombiano</span>
+        </span>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-[#4A044E]">
+          Pequeños detalles, grandes momentos ♡
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-[#701A75]/80 leading-relaxed font-light">
+          SAMELÁ nace con el deseo de ofrecer productos de belleza femenina, cuidado facial y accesorios prácticos y elegantes. Cada pieza y empaque ha sido pensado para consentir tu piel y sorprender en ocasiones especiales.
+        </p>
+      </div>
+
+      <!-- 4 Pillars Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white/80 backdrop-blur-xs p-6 rounded-3xl border border-[#F8D8E7] shadow-2xs hover:shadow-md transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#FCE7F3] to-[#FAF5FF] text-[#BE185D] flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            🌸
+          </div>
+          <h3 class="font-serif-title font-bold text-lg text-[#831843] mb-1">
+            Cuidado Facial Glow
+          </h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Fórmulas dermatológicamente amables: Ácido Hialurónico, Niacinamida y extractos florales para una piel radiante.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white/80 backdrop-blur-xs p-6 rounded-3xl border border-[#F8D8E7] shadow-2xs hover:shadow-md transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#FAF5FF] to-[#EDE9FE] text-[#7E22CE] flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            💎
+          </div>
+          <h3 class="font-serif-title font-bold text-lg text-[#581C87] mb-1">
+            Accesorios Delicados
+          </h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Aretes flor, candongas doradas, collares finos y espejos grabados que complementan tu estilo femenino y sofisticado.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white/80 backdrop-blur-xs p-6 rounded-3xl border border-[#F8D8E7] shadow-2xs hover:shadow-md transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#FFF0F6] to-[#FCE7F3] text-[#BE185D] flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            🎁
+          </div>
+          <h3 class="font-serif-title font-bold text-lg text-[#831843] mb-1">
+            Empaque de Lujo
+          </h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Cajas rígidas rosas, lazos de satén, papel seda perfumado y dedicatorias personalizadas listas para obsequiar.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white/80 backdrop-blur-xs p-6 rounded-3xl border border-[#F8D8E7] shadow-2xs hover:shadow-md transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#FAF5FF] to-[#FDF2F8] text-[#9333EA] flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            📜
+          </div>
+          <h3 class="font-serif-title font-bold text-lg text-[#581C87] mb-1">
+            Factura y Orden Oficial
+          </h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Emisión de comprobantes inmediatos en PDF y WhatsApp tras verificar transferencias (Bancolombia/Nequi) o efectivo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 3D Interactive Spotlight Bar -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-gradient-to-r from-[#4A044E] via-[#701A75] to-[#831843] text-white p-6 sm:p-10 shadow-xl overflow-hidden relative">
+        
+        <!-- Decorative subtle background circles -->
+        <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-pink-500/15 blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-purple-500/15 blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4 text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 text-pink-200 text-xs font-bold uppercase tracking-wider backdrop-blur-xs border border-white/20">
+              <mat-icon class="text-xs scale-90">view_in_ar</mat-icon>
+              <span>Modelado 3D WebGL en Tiempo Real</span>
+            </div>
+            
+            <h2 class="font-serif-title text-2xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
+              Inspecciona los Productos en 3D Interactivo
+            </h2>
+            
+            <p class="text-xs sm:text-sm text-pink-100/90 leading-relaxed max-w-xl font-light">
+              Gira 360°, haz zoom e interactúa con el vidrio esmerilado, tapas en oro rosa, texturas de satén y detalles de joyería antes de comprar.
+            </p>
+
+            <div class="flex flex-wrap gap-2.5 pt-2">
+              <button
+                type="button"
+                (click)="openViewerForFeatured('serum')"
+                class="px-4 py-2 rounded-xl bg-white/20 hover:bg-white text-white hover:text-[#701A75] text-xs font-bold transition-all border border-white/30 flex items-center gap-1.5 cursor-pointer"
+              >
+                <span>🧪</span>
+                <span>Ver Serum en 3D</span>
+              </button>
+
+              <button
+                type="button"
+                (click)="openViewerForFeatured('jar')"
+                class="px-4 py-2 rounded-xl bg-white/20 hover:bg-white text-white hover:text-[#701A75] text-xs font-bold transition-all border border-white/30 flex items-center gap-1.5 cursor-pointer"
+              >
+                <span>✨</span>
+                <span>Ver Crema Facial 3D</span>
+              </button>
+
+              <button
+                type="button"
+                (click)="openViewerForFeatured('box')"
+                class="px-4 py-2 rounded-xl bg-white/20 hover:bg-white text-white hover:text-[#701A75] text-xs font-bold transition-all border border-white/30 flex items-center gap-1.5 cursor-pointer"
+              >
+                <span>🎁</span>
+                <span>Ver Caja de Regalo 3D</span>
+              </button>
+
+              <button
+                type="button"
+                (click)="openViewerForFeatured('mirror')"
+                class="px-4 py-2 rounded-xl bg-white/20 hover:bg-white text-white hover:text-[#701A75] text-xs font-bold transition-all border border-white/30 flex items-center gap-1.5 cursor-pointer"
+              >
+                <span>🪞</span>
+                <span>Ver Espejo 3D</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-4 flex flex-col items-center justify-center text-center shadow-inner">
+              <div class="w-36 h-36 rounded-full bg-gradient-to-tr from-[#F472B6] to-[#C084FC] flex items-center justify-center text-6xl shadow-2xl animate-pulse">
+                👑
+              </div>
+              <span class="font-serif-title font-bold text-sm text-pink-200 mt-4">
+                Visor Interactivo SAMELÁ 3D
+              </span>
+              <span class="text-[11px] text-pink-100/70">
+                Arrastra y rota libremente en cualquier producto
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: Catálogo Interactivo de Productos -->
+    <section id="catalogo" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Catalog Header & Search -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 text-left">
+        <div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFF0F6] text-[#BE185D] text-xs font-bold uppercase tracking-wider border border-[#F8D8E7] mb-2">
+            <span>🌸</span>
+            <span>Catálogo Interactivo 2026</span>
+          </span>
+          <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-[#4A044E]">
+            Colección de Cuidado Facial & Accesorios
+          </h2>
+          <p class="mt-1 text-xs sm:text-sm text-[#701A75]/80">
+            Descubre nuestra línea completa de bienestar, tratamientos y detalles para obsequiar.
+          </p>
+        </div>
+
+        <!-- Search input -->
+        <div class="w-full md:w-80">
+          <div class="relative">
+            <input
+              type="text"
+              [formControl]="searchControl"
+              (input)="onSearchChange()"
+              placeholder="Buscar crema, sérum, kit, aretes..."
+              class="w-full text-xs py-3 pl-10 pr-4 rounded-2xl border border-[#F8D8E7] bg-white shadow-2xs focus:border-[#BE185D] focus:ring-2 focus:ring-[#BE185D]/20 outline-none transition-all placeholder:text-stone-400"
+            />
+            <mat-icon class="absolute left-3 top-3 text-stone-400 text-lg">search</mat-icon>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar">
+        @for (cat of categories; track cat.key) {
+          <button
+            type="button"
+            (click)="onCategoryChange(cat.key)"
+            class="px-4 py-2.5 rounded-2xl text-xs font-bold whitespace-nowrap transition-all flex items-center gap-2 cursor-pointer"
+            [class.bg-gradient-to-r]="productService.selectedCategory() === cat.key"
+            [class.from-[#BE185D]]="productService.selectedCategory() === cat.key"
+            [class.to-[#9D174D]]="productService.selectedCategory() === cat.key"
+            [class.text-white]="productService.selectedCategory() === cat.key"
+            [class.shadow-md]="productService.selectedCategory() === cat.key"
+            [class.shadow-[#BE185D]/20]="productService.selectedCategory() === cat.key"
+            [class.bg-white]="productService.selectedCategory() !== cat.key"
+            [class.text-stone-600]="productService.selectedCategory() !== cat.key"
+            [class.border]="productService.selectedCategory() !== cat.key"
+            [class.border-[#F8D8E7]]="productService.selectedCategory() !== cat.key"
+            [class.hover:border-[#BE185D]]="productService.selectedCategory() !== cat.key"
+          >
+            <mat-icon class="text-sm scale-90">{{ cat.icon }}</mat-icon>
+            <span>{{ cat.label }}</span>
+          </button>
+        }
+      </div>
+
+      <!-- Products Grid -->
+      @if (filteredProducts().length === 0) {
+        <div class="py-16 text-center bg-white rounded-3xl border border-[#F8D8E7] p-8 space-y-3">
+          <div class="text-4xl">🔍</div>
+          <h3 class="font-serif-title text-xl font-bold text-[#831843]">
+            No encontramos productos con tu búsqueda
+          </h3>
+          <p class="text-xs text-stone-500 max-w-sm mx-auto">
+            Intenta buscando por "Glow", "Sérum", "Kit", "Aretes" o restablece los filtros.
+          </p>
+          <button
+            type="button"
+            (click)="searchControl.setValue(''); onSearchChange(); onCategoryChange('todos')"
+            class="px-4 py-2 rounded-xl bg-[#BE185D] text-white text-xs font-bold shadow-xs hover:bg-[#9D174D]"
+          >
+            Ver Todo el Catálogo
+          </button>
+        </div>
+      } @else {
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          @for (product of filteredProducts(); track product.id) {
+            <app-product-card [product]="product" />
+          }
+        </div>
+      }
+
+    </section>
+
+    <!-- SECTION 4: Arma tu Caja de Regalo SAMELÁ ♡ -->
+    <app-custom-kit-builder />
+
+    <!-- SECTION 5: Cómo Comprar & Medios de Pago Integrados -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-[#F8D8E7] shadow-sm text-left">
+        
+        <div class="max-w-3xl mb-10">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FAF5FF] text-[#701A75] text-xs font-bold uppercase tracking-wider border border-[#E9D5FF] mb-2">
+            <span>🛡️</span>
+            <span>Compras Claras & Seguras</span>
+          </span>
+          <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-[#4A044E]">
+            ¿Cómo Funciona el Proceso de Compra y Facturación?
+          </h2>
+          <p class="mt-2 text-sm text-[#701A75]/80 font-light">
+            En SAMELÁ garantizamos transparencia total. Manejamos exclusivamente pagos en efectivo o transferencia, generando comprobantes oficiales auditados.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Step 1 -->
+          <div class="space-y-3 relative">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#FCE7F3] to-[#FFF0F6] text-[#BE185D] font-bold font-serif-title text-lg flex items-center justify-center border border-[#F8D8E7]">
+              01
+            </div>
+            <h3 class="font-serif-title font-bold text-lg text-[#831843]">
+              Registro & Pedido
+            </h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Crea tu cuenta de cliente con tus datos de envío y facturación. Elige tus productos favoritos o arma tu caja personalizada.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="space-y-3 relative">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#FAF5FF] to-[#EDE9FE] text-[#7E22CE] font-bold font-serif-title text-lg flex items-center justify-center border border-[#E9D5FF]">
+              02
+            </div>
+            <h3 class="font-serif-title font-bold text-lg text-[#581C87]">
+              Pago Transferencia o Efectivo
+            </h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Transfiere desde Bancolombia, Nequi o Daviplata, o elige pago en efectivo contra entrega para envíos locales acordados.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="space-y-3 relative">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#ECFDF5] to-[#D1FAE5] text-[#059669] font-bold font-serif-title text-lg flex items-center justify-center border border-[#A7F3D0]">
+              03
+            </div>
+            <h3 class="font-serif-title font-bold text-lg text-[#065F46]">
+              Orden & Factura Electrónica
+            </h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Al verificar el pago se genera automáticamente tu Factura Oficial con número consecutivo y la enviamos a tu WhatsApp o PDF.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Official Accounts Quick Banner -->
+        <div class="mt-10 p-5 rounded-2xl bg-[#FFF9FC] border border-[#F8D8E7] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-white text-[#BE185D] flex items-center justify-center text-xl shadow-2xs border border-[#F8D8E7]">
+              🏦
+            </div>
+            <div>
+              <span class="text-xs font-bold text-[#831843] block">Cuentas Autorizadas para Transferencias:</span>
+              <span class="text-xs text-stone-600">
+                Bancolombia Ahorros: <strong>524-892104-32</strong> · Nequi / Daviplata: <strong>314 567 8901</strong>
+              </span>
+            </div>
+          </div>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=573145678901&text=Hola%20SAMEL%C3%81,%20quiero%20validar%20mi%20pago"
+            target="_blank"
+            rel="noopener"
+            class="px-4 py-2 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold shadow-xs transition-colors whitespace-nowrap flex items-center gap-1.5"
+          >
+            <span>💬</span>
+            <span>Atención WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <app-footer />
+
+  <!-- Modals & Overlays -->
+  <app-product-modal />
+  <app-viewer-modal />
+  <app-cart-drawer />
+  <app-auth-modal />
+  <app-checkout-modal />
+  <app-order-success-modal />
+  <app-invoice-modal />
+  <app-orders-history-modal #ordersHistoryModal />
+  <app-admin-panel />
+
+</div>
